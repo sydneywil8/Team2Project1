@@ -27,7 +27,7 @@
     }
     .subtext {
       font-family: Courier, monospace;
-      font-size: 90%;
+      font-size: 100%;  /* Changed from 90% to 100% as requested */
       font-style: italic;
       color: #333;
     }
@@ -41,7 +41,7 @@
       text-decoration: underline;
     }
     .team-img {
-      width: 600px; /* Much bigger image */
+      width: 600px;
       max-width: 100%;
       height: auto;
       border-radius: 14px;
@@ -54,10 +54,12 @@
       margin-top: 2em;
       margin-bottom: 2em;
     }
-    /* Make team values all black */
     .team-values li,
     .team-values span {
       color: #000 !important;
+      font-family: inherit !important; /* Use default font style */
+      font-size: inherit !important;
+      font-style: normal !important;
     }
     a {
       color: Tomato;
@@ -120,10 +122,10 @@
     <h2>Our Top Team Values</h2>
     <ol class="team-values">
       <li><span>Authenticity</span></li>
-      <li>Teamwork</li>
-      <li>Customer Satisfaction</li>
-      <li><span style="font-family: Courier, monospace;">Creativity</span></li>
-      <li>Reliability</li>
+      <li><span>Teamwork</span></li>
+      <li><span>Customer Satisfaction</span></li>
+      <li><span>Creativity</span></li>
+      <li><span>Reliability</span></li>
     </ol>
     <h2>Other Team Members</h2>
     <ul>
